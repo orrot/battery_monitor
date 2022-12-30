@@ -11,7 +11,16 @@ The current Ubuntu battery calculation just takes the rate consumed by the lapto
 * apci (can be installed in ubuntu with just "sudo apt install acpi")
 * upower
 
-# Use
+# Restrictions
+
+* No folder customization. All is configured to ~/Battery folder.
+* No vars configs (it is a script just used by me, so I didn't care about allowing different configs)
+
+
+# Regular Use
+* battery_start -> execute in background the battery_monitor script. The script checks every 5 seconds the battery consumption and update
+
+# My Way
 
 The script is just a bash script. I am using along with KDE widgets like: https://store.kde.org/p/1166510/ and https://store.kde.org/p/1297839, to show the information.
 
