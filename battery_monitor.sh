@@ -54,10 +54,11 @@ while grep -q 'true' ~/Battery/.battery_status; do
       avg_estimate_hours_int=$(echo "scale=0; $session_empty_estimated/3600" | bc)
 
       # Just consider estimations between 0 and 15
+      echo "AVG TIMe $avg_estimate_hours"
       if [ "$avg_estimate_hours_int" -gt 0 ] && [ "$avg_estimate_hours_int" -lt 30 ]; then
         truncate -s 0 ~/Battery/batstat
-        echo $avg_estimate_hours | awk '{printf("%.1f h\n",$1)}' >> ~/Battery/batstat
-        echo $avg_full_design_estimate_hours | awk '{printf("%.1f h\n",$1)}' >> ~/Battery/batstat
+        echo $avg_estimate_hours | tr . , | awk '{printf("%.1f h\n",$1)}' >> ~/Battery/batstat
+        echo $avg_full_design_estimate_hours | tr . , | awk '{printf("%.1f h\n",$1)}' >> ~/Battery/batstat
       fi
       
     fi
