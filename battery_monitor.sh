@@ -63,9 +63,9 @@ while grep -q 'true' ~/Battery/.battery_status; do
     fi
     # Debug
     # echo "$ac_adapter"
-    # echo "session_full_estimated: ${session_full_estimated},session_empty_estimated: ${session_empty_estimated}" 
-    # echo "current_estimate_seconds: ${current_estimate_seconds},full_design_estimate_seconds: ${full_design_estimate_seconds}" 
-    # echo "${consumed},${session_seconds},${session_seconds},${avg_full_design_estimate_hours},${avg_estimate_hours}" 
+    # echo "session_full_estimated: ${session_full_estimated},session_empty_estimated: ${session_empty_estimated}"
+    # echo "current_estimate_seconds: ${current_estimate_seconds},full_design_estimate_seconds: ${full_design_estimate_seconds}"
+    # echo "${consumed},${session_seconds},${session_seconds},${avg_full_design_estimate_hours},${avg_estimate_hours}"
     
     
     # Debug with file

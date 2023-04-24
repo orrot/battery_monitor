@@ -6,8 +6,8 @@
 truncate -s 0 ~/Battery/batstat
 echo ' --- ' >> ~/Battery/batstat
 
-sleep 240;
+sleep 60;
 
 
-(nohup /home/orrot/Programs/path/battery_monitor.sh) &
+(/home/orrot/Programs/path/battery_monitor.sh) &
 exit 0;
