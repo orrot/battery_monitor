@@ -10,6 +10,7 @@ The current Ubuntu battery calculation just takes the rate consumed by the lapto
 
 * apci (can be installed in ubuntu with just "sudo apt install acpi")
 * upower
+* Same Date format than the location. (If the language is English, date should be in english)
 
 # Restrictions
 
